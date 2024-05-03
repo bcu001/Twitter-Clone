@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>twitter clone</title>
+    <title>Home / X</title>
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
     <link rel="stylesheet" href="css/global.css">
 
     <!-- icons -->
@@ -14,11 +15,11 @@
 </head>
 
 <body class=" bg-black text-white">
-    <div class="flex full-height container mx-auto">
-        <div id="left" class="w-[50%] flex flex-col gap-5 mt-3 pl-8">
-            <div id="logo" class="invert p-2">
+    <div class="flex full-height container xl:mx-auto">
+        <div id="left" class="w-[85px] xl:w-[50%] flex flex-col gap-5 pl-8 items-baseline xl:items-baseline">
+            <div id="logo" class="cursor-pointer border-0 rounded-full w-fit p-3 hover:bg-[#111111] mt-[1px]">
                 <svg viewBox="0 0 24 24" aria-hidden="true"
-                    class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    class="w-7 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk invert">
                     <g>
                         <path
                             d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
@@ -30,67 +31,70 @@
                 <ul class="flex flex-col text-[20px]">
                     <li
                         class="flex justify-start items-center gap-3 cursor-pointer p-[6px] hover:bg-[#111111] w-fit hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl"> home </span>Home
+                        <span class="material-symbols-outlined text-3xl"> home </span><span class="hidden xl:block">Home</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 cursor-pointer p-[6px] hover:bg-[#111111] w-fit hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl"> search </span>Explore
+                        <span class="material-symbols-outlined text-3xl"> search </span><span class="hidden xl:block">Explore</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 cursor-pointer p-[6px] hover:bg-[#111111] w-fit hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl"> notifications </span>Notifications
+                        <span class="material-symbols-outlined text-3xl"> notifications </span><span class="hidden xl:block">Notifications</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 cursor-pointer p-[6px] hover:bg-[#111111] w-fit hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl"> mail </span>Messages
+                        <span class="material-symbols-outlined text-3xl"> mail </span><span class="hidden xl:block">Messages</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 cursor-pointer p-[6px] hover:bg-[#111111] w-fit hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl"> smart_toy </span>Grok
+                        <span class="material-symbols-outlined text-3xl"> smart_toy </span><span class="hidden xl:block">Grok</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 cursor-pointer p-[6px] hover:bg-[#111111] w-fit hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl"> list </span>Lists
+                        <span class="material-symbols-outlined text-3xl"> list </span><span class="hidden xl:block">Lists</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 cursor-pointer p-[6px] hover:bg-[#111111] w-fit hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl"> person </span>Profile
+                        <span class="material-symbols-outlined text-3xl"> person </span><span class="hidden xl:block">Profile</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 cursor-pointer p-[6px] hover:bg-[#111111] w-fit hover:rounded-full">
-                        <span class="material-symbols-outlined text-3xl"> more_horiz </span>More
+                        <span class="material-symbols-outlined text-3xl"> more_horiz </span><span class="hidden xl:block">More</span>
                     </li>
                 </ul>
             </div>
-            <button class="bg-[#1d9af1] rounded-full mr-8 py-3 font-bold text-lg hover:bg-[#198adb]">Post</button>
-            <div class="profile rounded-full flex justify-between items-center mr-5 hover:bg-[#111111] p-3">
-                <div class="flex gap-3">
+            <button class="bg-[#1d9af1] rounded-full mr-8 py-3 px-20 font-bold text-lg hover:bg-[#198adb] hidden xl:block">Post</button>
+            <button class="w-11 bg-[#1d9af1] rounded-full p-3 block xl:hidden "><img src="img/postIcon.svg" alt="postIcon"></button>
+            <div class="profile rounded-full flex justify-between items-center xl:mr-5 hover:bg-[#111111] xl:p-3 mt-8 xl:mt-0">
+                <div class="flex xl:gap-3 items-center">
                     <div>
                         <img class="border rounded-full w-10"
                             src="https://pbs.twimg.com/profile_images/1785326014182154240/4MXuFlhH_x96.jpg"
                             alt="profileImg">
                     </div>
-                    <div>
+                    <div class="hidden xl:block">
                         <div class="name font-bold">Bhuwan Upadhyay</div>
                         <div class="handle ">@bcu001</div>
                     </div>
                 </div>
-                <div class="material-symbols-outlined">
-                    more_horiz
+                <div class="material-symbols-outline hidden xl:block">
+                    <!-- more_horiz -->
                 </div>
             </div>
         </div>
-        <div id="mid" class="w-full border-[1px] border-x-gray-500 border-y-black">
-            <div class="top flex border-b-gray-500 border-t-0 border-x-0 border-[1px] sticky top-0 backdrop-blur-xl">
-                <div class="forYou w-1/2 flex justify-center items-center hover:bg-[#121212] cursor-pointer">For You
-                </div>
-                <div class="following w-1/2 flex justify-center items-center hover:bg-[#121212] cursor-pointer">
+        <div id="mid" class="w-full border-[1px] border-x-0 border-y-black">
+            <div class="top flex border-b-[#2f3336] border-t-0 border-x-[#2f3336] border-[1px] sticky top-0 backdrop-blur-md">
+                <div
+                    class="forYou w-1/2 flex justify-center items-center hover:bg-[#121212] cursor-pointer hover:underline underline-offset-[22px] decoration-[#1c9af0] decoration-[4px]">
+                    For You</div>
+                <div
+                    class="following w-1/2 flex justify-center items-center hover:bg-[#121212] cursor-pointer hover:underline underline-offset-[22px] decoration-[#1c9af0] decoration-[4px]">
                     Following</div>
                 <div class="settings p-3 flex justify-center items-center cursor-pointer"><span
                         class="material-symbols-outlined rounded-full p-2 hover:bg-[#121212]"> settings </span></div>
             </div>
-            <div class="post  border-b-gray-500 border-t-0 border-x-0 border-[1px] pb-2">
-                <div class="flex items-center m-4 gap-3">
+            <div class="post  border-b-[#2f3336] border-t-0 border-x-[#2f3336] border-[1px] pb-2">
+                <div class="flex items-center p-4 gap-3">
                     <div class="profileImg "><img class="rounded-full w-10"
                             src="https://pbs.twimg.com/profile_images/1785326014182154240/4MXuFlhH_x96.jpg"
                             alt="profileImg"></div>
@@ -112,18 +116,114 @@
                 </div>
             </div>
 
+            <div class="border border-[#2f3336] border-x-[#2f3336] border-t-0 hover:bg-[#111111] cursor-pointer">
+                <div class="flex gap-3 px-4 pt-3 ">
+                    <div class="profileImg "><img class="rounded-full w-10"
+                            src="https://pbs.twimg.com/profile_images/1767620710862573568/izlG5zfN_normal.jpg"
+                            alt="profileImg">
+                    </div>
+                    <div class="">
+                        <div class="flex gap-3">
+                            <h2 class="flex font-bold hover:underline">GPT:Game Pass Tracker
+                                <img src="/img/blueMark.svg" alt="blueMark" class="w-5">
+                            </h2>
+                            <span class="text-[#70747b]">@GPTGamingNews · 22h</span>
+                        </div>
+                        <p class="font-light">Today is the 1 year anniversary of Redfall</p>
+                        <p class="font-light mt-4">Say something positive about it 💚🎮</p>
+                    </div>
+
+                </div>
+                <div class="w-[85%] ml-[4rem]">
+                    <img class=" border-0 rounded-xl " src="https://pbs.twimg.com/media/GMlZKagWMAAyHOa?format=jpg&name=small" alt="">
+                </div>
+                <ul class="flex justify-around py-2">
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/comment.svg" alt="">299</li>
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/rePost.svg" alt="">98</li>
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/like.svg" alt="">713</li>
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/views.svg" alt="">310K</li>
+                    <div class="flex gap-2">
+                        <img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/bookmark.svg" alt=""></li>
+                        <img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/share.svg" alt=""></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="border border-[#2f3336] border-x-[#2f3336] border-t-0 hover:bg-[#111111] cursor-pointer">
+                <div class="flex gap-3 px-4 pt-3 ">
+                    <div class="profileImg "><img class="rounded-full w-10"
+                            src="https://pbs.twimg.com/profile_images/1767620710862573568/izlG5zfN_normal.jpg"
+                            alt="profileImg">
+                    </div>
+                    <div class="">
+                        <div class="flex gap-3">
+                            <h2 class="flex font-bold hover:underline">GPT:Game Pass Tracker
+                                <img src="/img/blueMark.svg" alt="blueMark" class="w-5">
+                            </h2>
+                            <span class="text-[#70747b]">@GPTGamingNews · 22h</span>
+                        </div>
+                        <p class="font-light">Today is the 1 year anniversary of Redfall</p>
+                        <p class="font-light mt-4">Say something positive about it 💚🎮</p>
+                    </div>
+
+                </div>
+                <div class="w-[85%] ml-[4rem]">
+                    <img class=" border-0 rounded-xl " src="https://pbs.twimg.com/media/GMlZKagWMAAyHOa?format=jpg&name=small" alt="">
+                </div>
+                <ul class="flex justify-around py-2">
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/comment.svg" alt="">299</li>
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/rePost.svg" alt="">98</li>
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/like.svg" alt="">713</li>
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/views.svg" alt="">310K</li>
+                    <div class="flex gap-2">
+                        <img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/bookmark.svg" alt=""></li>
+                        <img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/share.svg" alt=""></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="border border-[#2f3336] border-x-[#2f3336] border-t-0 hover:bg-[#111111] cursor-pointer">
+                <div class="flex gap-3 px-4 pt-3 ">
+                    <div class="profileImg "><img class="rounded-full w-10"
+                            src="https://pbs.twimg.com/profile_images/1767620710862573568/izlG5zfN_normal.jpg"
+                            alt="profileImg">
+                    </div>
+                    <div class="">
+                        <div class="flex gap-3">
+                            <h2 class="flex font-bold hover:underline">GPT:Game Pass Tracker
+                                <img src="/img/blueMark.svg" alt="blueMark" class="w-5">
+                            </h2>
+                            <span class="text-[#70747b]">@GPTGamingNews · 22h</span>
+                        </div>
+                        <p class="font-light">Today is the 1 year anniversary of Redfall</p>
+                        <p class="font-light mt-4">Say something positive about it 💚🎮</p>
+                    </div>
+
+                </div>
+                <div class="w-[85%] ml-[4rem]">
+                    <img class=" border-0 rounded-xl " src="https://pbs.twimg.com/media/GMlZKagWMAAyHOa?format=jpg&name=small" alt="">
+                </div>
+                <ul class="flex justify-around py-2">
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/comment.svg" alt="">299</li>
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/rePost.svg" alt="">98</li>
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/like.svg" alt="">713</li>
+                    <li class="flex hover:text-blue-400"><img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/views.svg" alt="">310K</li>
+                    <div class="flex gap-2">
+                        <img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/bookmark.svg" alt=""></li>
+                        <img class="w-6 border-0 rounded-full p-1 hover:bg-blue-400" src="img/share.svg" alt=""></li>
+                    </div>
+                </ul>
+            </div>
         </div>
         <div id="right" class="w-[70%]  flex flex-col items-center bg-red-400r">
             <div class="search p-4 bg-black sticky top-0">
                 <input type="text" name="search" id="search" placeholder="Search"
                     class="rounded-full py-2 px-4 bg-[#202226] w-[20rem] focus:outline-none">
             </div>
-            <div class="subscribe w-4/5 border-[1px] border-gray-400 mx-10 mt-3 rounded-2xl px-4 py-2">
+            <div class="subscribe w-4/5 border-[1px] border-[#2f3336] mx-10 mt-3 rounded-2xl px-4 py-2">
                 <h2 class="text-2xl font-bold">Subscribe to Premium</h2>
                 <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
                 <button class="bg-[#1d9af1] w-fit py-2 px-5 my-3 rounded-full hover:bg-[#1d99f1d7]">Subscribe</button>
             </div>
-            <div class="whats w-4/5 border-[1px] border-gray-400 mx-10 my-4 rounded-2xl pt-2">
+            <div class="whats w-4/5 border-[1px] border-[#2f3336] mx-10 my-4 rounded-2xl pt-2">
                 <h2 class="text-2xl font-bold px-4 pb-3 ">What's happening</h2>
                 <div class="item py-3 px-4 hover:bg-[#080808] cursor-pointer">
                     <div class="text-sm text-[#525559]">Trending in India</div>
@@ -154,7 +254,7 @@
                 </div>
             </div>
 
-            <div class="follow w-4/5 border-[1px] border-gray-400 mx-10 my-4 rounded-2xl pt-2">
+            <div class="follow w-4/5 border-[1px] border-[#2f3336] mx-10 my-4 rounded-2xl pt-2">
                 <h2 class="text-2xl font-bold px-4 pb-3 ">Who to follow</h2>
                 <div class="follower py-3 px-4 hover:bg-[#080808] cursor-pointer flex justify-between items-center">
                     <div class="flex gap-3">
